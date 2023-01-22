@@ -1,0 +1,200 @@
+/*DESIGN BY Harold*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*DIV PADRE*/
+
+.contenedor-default{
+    max-width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 500ms;
+}
+
+/*CONFIGURACION DE LA CAJA DEFAULT QUE TIENE EL DASHBOARD*/
+.caja_default{
+
+    width: 80%;
+    height: 350px;
+    padding: 10px 20px;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    /*backdrop-filter: blur(10px);*/
+    /*background-color: #034BFF;*/
+    background: aliceblue;
+    /*border: 1px solid #c1300c;*/
+    border-radius: 25px;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+}
+
+
+
+
+
+/*CONFIGURACION PADRE DE LOS TITULOS DEL DASH BOARD*/
+
+.contenedor-configuracion-default i h4{ /*SELECTOR PADRE DE LOS TEXTOS E IMAGENES*/
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.contenedor-configuracion-default i{
+    width: 10px;
+    font-size: 22px;
+    
+}
+
+.contenedor-configuracion-default h2{
+    font-size: 18px;
+    margin-left: 24px;
+
+    
+}
+
+.contenedor-configuracion-default span{
+    font-weight: 400;
+}
+
+
+.titulo-de-las-ventanas-default{
+    display: flex;
+}
+
+
+
+
+/***************************************************************************************/
+
+/*************APAGANDO CONTENEDOR POR ID************/
+
+#ventana_nuevo_usuario{
+    display: none;
+}
+
+#ventana_todos_los_usuarios{
+    display: none;
+}
+
+
+/************************************************/
+
+
+
+/*ESTILOS DE LAS VENTANAS*/
+
+
+.formulario-nuevo-user{
+    background-color: white;
+    margin: auto;
+    height: 90%;
+    width: 70%;
+    border-radius: 15px;
+    padding: 30px 0px;
+    transition: all 300ms;
+}
+
+.formulario-nuevo-user:hover{
+    box-shadow: 4px 2px 11px black;
+}
+
+.ventana-nuevo-user .formulario-nuevo-user input,button{
+    display: block;
+    padding: 8px 30px;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+}
+
+
+.ventana-nuevo-user .formulario-nuevo-user button{
+
+    background-color: #EA390F;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+}
+
+.ventana-nuevo-user .formulario-nuevo-user button:hover{
+
+    background-color: #c1300c;
+    color: white;
+
+}
+
+
+.ventana-nuevo-user .formulario-nuevo-user input::placeholder{
+
+    color: #034BFF;
+    font-weight: bold;
+}
+
+.ventana-nuevo-user .formulario-nuevo-user input{
+
+    color: #d8360e;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+
+/*------------------CORRIGIENDO ALGUNAS COSAS-----------------*/
+
+#corrigiendo-icono-nueva-categoria{
+    margin-top: 2px;
+}
+
+
+/*------------------------------------------------------------*/
+
+
+
+
+.ventana-nuevo-user .formulario-nuevo-user h3{
+    margin-top: 0px;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+@media screen and (max-width: 760px){
+    .formulario-nuevo-user{
+        width: 100%;
+    }
+
+    .ventana-nuevo-user .formulario-nuevo-user input,button{
+        /*padding: 8px 30px;*/
+        padding: 8px 0.2rem;
+    }
+
+    .ventana-nuevo-user .formulario-nuevo-user h3,input,button{
+        font-size: 10px;
+    }
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

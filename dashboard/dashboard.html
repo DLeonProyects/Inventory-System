@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css"> <!---ESTILOS DE EL MENU--->
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="estilos_ventanas.css"> <!---ESTILOS DE LAS VENTANAS--->
+    <script src="https://kit.fontawesome.com/12fbc716d2.js" crossorigin="anonymous"></script>
+</head>
+
+
+ <!---Body by Harold-->
+<body id="body">
+
+
+    <header>
+        <div class="icon_menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+
+        <div class="menu-botones-usuario" id="botones_de_usuario_menu">
+            <div class="boton-cuenta">
+                <a href="#">Cuenta</a>
+            </div>
+
+            <div class="boton-salir">
+                <a href="#">Salir</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+        <div class="name__page" id="titulo_menu">
+            <i class="fa-solid fa-box-open"></i>
+            <h4>Inventory System</h4>
+        </div>
+
+
+
+        <div class="options__menu" id="opciones_del_menu">
+            <div class="titulo-menu-inicio">
+                <h4>Dashboard</h4>
+            </div>
+            <a href="#" class="selected" id="inicio">
+                <div class="option">
+                    <i class="fas fa-home" data-title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <div class="titulo-menu-inicio">
+                <h4>Usuarios</h4>
+            </div>
+            <a href="#" id="nuevo-user">
+                <div class="option">
+                    <i class="fa-solid fa-plus" data-title="Añadir Usuarios"></i>
+                    <h4>Nuevo usuario</h4>
+                </div>
+            </a>
+
+            <a href="#" id="todos-los-usuarios">
+                <div class="option">
+                    <i class="fa-regular fa-user" data-title="Lista de Usuarios"></i>
+                    <h4>Todos los usuarios</h4>
+                </div>
+            </a>
+
+            <a href="#" id="buscar-usuarios">
+                <div class="option">
+                    <i class="fa-regular fa-address-book" data-title="Buscar Usuarios"></i>
+                    <h4>Buscar usuario</h4>
+                </div>
+            </a>
+
+            <div class="titulo-menu-inicio">
+                <h4>Categorias</h4>
+            </div>
+            <a href="#" id="nueva-categoria">
+                <div class="option">
+                    <i class="fa-solid fa-plus" data-title="Añadir Categorias"></i>
+                    <h4>Nueva categoria</h4>
+                </div>
+            </a>
+
+            <a href="#" id="todas-las-categorias">
+                <div class="option">
+                    <i class="fa-solid fa-layer-group" data-title="Todas las categorias"></i>
+                    <h4>Todas las categorias </h4>
+                </div>
+            </a>
+
+            <a href="#" id="buscar-categoria">
+                <div class="option">
+                    <i class="fa-solid fa-magnifying-glass" data-title="Buscar Categoria"></i>
+                    <h4>Buscar categoria</h4>
+                </div>
+            </a>
+
+            <div class="titulo-menu-inicio">
+                <h4>Productos</h4>
+            </div>
+            <a href="#" id="nuevo-producto">
+                <div class="option">
+                    <i class="fa-solid fa-plus" data-title="Añadir Productos"></i>
+                    <h4>Nuevo producto</h4>
+                </div>
+            </a>
+
+
+            <a href="#" id="lista-productos">
+                <div class="option">
+                    <i class="fa-solid fa-weight-hanging" data-title="Listado de Productos"></i>
+                    <h4>Lista de productos</h4>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <i class="fa-solid fa-table-list" data-title="Productos por Categoria"></i>
+                    <h4>Por categoria</h4>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="option">
+                    <i class="fa-solid fa-magnifying-glass" data-title="Buscar Productos"></i>
+                    <h4>Buscar producto</h4>
+                </div>
+            </a>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <!---Main by Daniel-->
+
+    <main>
+
+        <!--<div class="lds-ellipsis loader"><div></div><div></div><div></div><div></div></div>-->
+
+
+        <!--–CONTENEDOR INICIO--->
+        <div class="contenedor-ventana-inicio contenedor-configuracion-default contenedor-default" id="ventana_inicio" >
+
+            <div class="ventana-inicio-titulo titulo-de-las-ventanas-default">
+                <i class="fas fa-home"></i>
+                <h2>Dashboard / <span>Inicio</span></h2>
+            </div>
+
+            <div class="ventana-inicio caja_default">
+
+            </div>
+        </div>
+
+        <!--–CONTENEDOR NUEVO USUARIO--->
+    
+        <div class="contenedor-ventana-nuevo-user contenedor-configuracion-default contenedor-default" id="ventana_nuevo_usuario">
+            <div class="ventana-nuevo-user-titulo titulo-de-las-ventanas-default">
+                <i class="fas fa-home"></i>
+                <h2>Usuarios / <span>Añadir nuevo usuario</span></h2>
+            </div>
+
+            <div class="ventana-nuevo-user caja_default"> 
+                <div class="formulario-nuevo-user">
+                    <form action="" method="post">
+                        <h3>AÑADIR UN USUARIO</h3>
+                        <input type="text" placeholder="Usuario" name="usuario" required="true">
+                        <input type="password" placeholder="Contraseña" name="contraseña" required="true">
+                        <input type="text" placeholder="Tipo de usuario" name="tipo-usuario" required="true">
+                        <button>Guardar usuario</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+         <!--–CONTENEDOR TODOS LOS USUARIO--->
+
+        <div class="contenedor-ventana-todos-los-usuarios contenedor-configuracion-default contenedor-default" id="ventana_todos_los_usuarios">
+            <div class="ventana-nuevo-user-titulo titulo-de-las-ventanas-default">
+                <i class="fa-regular fa-user"></i>
+                <h2>
+                    Usuarios / <span>Todos los usuarios</span>
+                </h2>
+            </div>
+
+            <div class="ventana-todos-los-usuarios caja_default"> 
+
+            </div>
+        </div>
+
+
+
+        <!--<div class="lds-ring"><div></div><div></div><div></div><div></div></div>-->
+
+
+
+        <!--–CONTENEDOR BUSCAR USUARIOS--->
+        <div class="contenedor-ventana-buscar-usuarios contenedor-configuracion-default contenedor-default" id="ventana_buscar_usuarios">
+            <div class="ventana-buscar-user-titulo titulo-de-las-ventanas-default">
+                <i class="fa-regular fa-address-book"></i>
+                <h2>
+                    Usuarios / <span>Buscar usuarios</span>
+                </h2>
+            </div>
+
+            <div class="ventana-buscar-usuarios caja_default"> 
+
+            </div>
+        </div>
+
+
+        <!--–CONTENEDOR NUEVA CATEGORIA--->
+
+        <div class="contenedor-ventana-nueva-categoria contenedor-configuracion-default contenedor-default" id="ventana_nueva_categoria">
+            <div class="ventana-nueva-categoria-titulo titulo-de-las-ventanas-default">
+                <i class="fa-solid fa-plus" id="corrigiendo-icono-nueva-categoria"></i>
+                <h2>
+                    Categorias / <span>Añadir categoria</span>
+                </h2>
+            </div>
+
+            <div class="ventana-nueva-categoria caja_default"> 
+
+            </div>
+        </div>
+
+
+
+        <!--–CONTENEDOR TODAS LAS CATEGORIAS--->
+        <div class="contenedor-todas-las-categorias contenedor-configuracion-default contenedor-default" id="ventana_todas_las_categorias">
+            <div class="ventana-todas-las-categorias-titulo titulo-de-las-ventanas-default">
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>
+                    Categorias / <span>Todas las categorias</span>
+                </h2>
+            </div>
+
+            <div class="ventana-todas-las-categorias caja_default"> 
+
+            </div>
+        </div>
+
+
+        <!--–CONTENEDOR BUSCAR CATEGORIAS--->
+        <div class="contenedor-todas-las-categorias contenedor-configuracion-default contenedor-default" id="ventana_todas_las_categorias">
+            <div class="ventana-todas-las-categorias-titulo titulo-de-las-ventanas-default">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h2>
+                    Categorias / <span>Todas las categorias</span>
+                </h2>
+            </div>
+
+            <div class="ventana-todas-las-categorias caja_default"> 
+
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+<script src="menujs.js"></script>
+<script src="func_dashboard.js"></script>
+    
+</body>
+</html>

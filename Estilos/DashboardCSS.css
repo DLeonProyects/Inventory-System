@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/*main{
+    margin-top: 90px;
+}*/
+
+
+
+header{
+    background: #f5f5f5;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin-left: -22px;
+    top: 0;
+    z-index: 200;
+}
+
+body{
+    margin-left: 92px; /*esto es para que este pegado del header*/
+    margin-top:80px;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+
+/************************ICONO DEL MENU DEL HEADER*********************/
+.icon_menu{
+    width: 60px;
+    height: 100%;
+    /*background:red;*/
+    transform: translateX(10px); /*esto es para moverlo un poco a la derecha*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon_menu i{ 
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+
+/**********************************************************************/
+
+
+
+
+/**********************************CONFIGURACION DEL MENU********************************/
+.menu__side{ /*MENU*/
+    width: 70px;
+    background: #034BFF; /*COLOR DEFAULT DEL SISTEMA*/
+    height: 100%;
+    position: fixed; /*esto es para que el menu ocupe el %100 de la pantalla*/
+    left: 0;
+    top: 0;
+    color: #FFffFF;
+    font-size: 15px; /*default 18*/
+    z-index: 300; 
+    overflow: hidden;
+    overflow-y: scroll;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/***************************************************************************************/
+
+
+/**************************JAVASCRIPT*****************************/
+
+
+
+.body_move{ /*CLASES PARA MOVER EL BODY CON JAVASCRIPT*/
+    margin-left: 270px;
+}
+
+.menu__side_move{ /*CLASES PARA HACER CREECER EL MENU CON JAVASCRIPT*/
+    width: 250px;
+    opacity: 1;
+    
+
+}
+
+/*****************************************************************/
+
+/* APAGANDO COSAS DEL MENU PARA ENCENDER CON JAVASCRIPT */
+
+.options__menu h4{ /*ESTA CLASE ES PARA APAGAR EL TEXTO EN EL MENU*/
+    opacity: 0;
+}
+
+
+/****************************JAVA SCRIPT***************************/
+
+.opciones_menu h4{ /*ESTA CLASE ES PARA PRENDER EL TEXTO EN EL MENU CON JAVASCRIPT*/
+    opacity: 1;
+    padding: 0px 15px;
+
+}
+
+
+
+
+/******************************************************************/
+
+
+
+
+
+.name__page{ /*PARA APAGAR EL TITULO DEL MENU*/
+    opacity: 0;
+    margin-left: 30px;
+
+}
+
+.name__page i{ /*CONFIGURACION DEL LOGO DEL MENU*/
+    
+    margin-left: 35px;
+    /*font-size: 10px;*/
+
+}
+
+
+/******************JAVASCRIPT***************/
+
+.titulo_del_menu{ /* PARA PRENDER EL TITULO DEL MENU CON JAVA SCRIPT*/
+    opacity: 1;
+}
+/******************************************/
+
+
+.menu-botones-usuario{ /*PARA APAGAR LOS BOTONES DE SALIR Y CUENTA*/
+    opacity: 0;
+}
+
+
+
+
+/******************JAVASCRIPT***************/
+
+.prender_botones_login_salir_menu{  /*PARA PRENDER LOS BOTONES DE SALIR Y CUENTA MEDIANTE JAVA SCRIPT*/
+    opacity: 1;
+}
+/******************************************/
+
+.menu__side i{ /*lOGO DEL TITULO DEL SISTEMA EN EL MENU*/
+    position: absolute;
+    left: -20px;
+}
+
+/* --------------------------------------*/
+
+
+/**************************************---------------------------*/
+
+.menu__side::-webkit-scrollbar{ /*esto es para ocultar el scroll*/
+    background: #034BFF;
+    width: 0px;
+}
+
+.menu__side{ /*para ocultar scroll*/
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+
+/****************TITULO DEL MENU DEL SISTEMA****************/
+
+.name__page{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center; /*con esto se alinea el logo y el texto en la misma posicion*/
+    margin-top: 10px;
+}
+
+/*.name__page h4{
+    font-family: 'Sofia', cursive;
+    font-size: 21px;
+
+}*/
+
+.name__page i{
+    width: 20px; /*esto funciona como margin y padding y funciona para que el texto y la imagen tengan su espacio y no se relacionen segun el tamano*/
+    margin-right: 20px; /*con esto lo despegamos*/
+}
+
+/*******************************************************************************/
+
+
+
+
+.options__menu{ /*SELECTOR PADRE DEL MENU*/
+    padding: 20px 30px;
+    position: absolute;
+    top: 70px;
+}
+
+.options__menu a{ /*TODAS LAS OPCIONES DEL MENU Etiqueta a*/
+    color: #ffffffb2;
+    cursor: default;
+    display: block;  /*en bloque porque la etiqueta a funciona en linea como texto*/
+    position: relative;
+    transition: color 300ms;
+
+}
+
+.options__menu a:hover{ /*TODAS LAS OPCIONES DEL MENU HOVER DE LA ETIQUETA a*/
+    color: white;
+}
+
+.options__menu .option{ /*TODAS LAS OPCIONES DEL MENU*/
+    display: flex;
+    padding: 8px 0px; /*espaciado de arriba*/
+    text-align: center;
+    position: relative;
+
+}
+
+
+
+.options__menu .option i{ /*TODAS LAS OPCIONES DEL MENU i = Iconos*/
+    width: 20px;
+    margin-right: 20px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.options__menu .option h4{ /*TODAS LAS OPCIONES DEL MENU H4*/
+    font-weight: 300;
+}
+
+.titulo-menu-inicio h4{ /*H4 = Dashboard*/
+    padding: 12px 0px;
+}
+
+.menu-botones-usuario{ /*PADRE DE BOTON DE CUENTA Y BOTON SALIR*/
+    /*padding: 12px 0px;*/
+    display: flex;
+    margin-top: 30px;
+    margin-left: -15px;
+}
+
+.menu-botones-usuario .boton-salir a{ /*BOTON DE SALIR*/
+
+    /*border: 2px solid #fff;*/
+    background-color: #fff;
+    color: #034BFF;
+    font-weight: 600;
+    margin-left: 9px;
+    padding: 4px 30px;
+    cursor: pointer;
+    transition: background 300ms;
+}
+
+.menu-botones-usuario .boton-cuenta a{ /*BOTON DE CUENTA*/
+    /*border: 2px solid #fff;*/
+    padding: 4px 30px;
+    font-weight: 600;
+    background-color: #fff;
+    color: #034BFF;
+    cursor: pointer;
+    transition: background 300ms;
+}
+
+.menu-botones-usuario .boton-cuenta a:hover{ /*HOVER DE CUENTA*/
+    background-color: rgb(234, 239, 244);
+
+}
+
+.menu-botones-usuario .boton-salir a:hover{ /*HOVER DE SALIR*/
+    background-color: rgb(234, 239, 244);
+
+}
+
+
+
+
+
+
+
+
+/*Barrita del menu*/
+
+a.selected{
+    color: #fff;
+}
+
+.selected:before{ 
+    content: '';
+    width: 3px;
+    height: 80%;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+/*----------------------------*/
+
+
+/*ponerle a los dispotivos los botones de salir y cuenta*/
+
+@media screen and (max-width: 760px){
+    .body_move{
+        margin-left: 0px;
+    }
+
+    .menu__side_move{
+        width: 80px;
+        left: -80px;
+    }
+
+    /*menu-botones-usuario{
+
+    }*/
+}
+
+
+/* JAVASCRIPT PARA LOS DISPOSITIVOS */
+
+
+.menu-botones-usuario-apagado a{
+    opacity: 0;
+
+}
+
+.menu-botones-usuario-apagado a{
+    opacity: 0;
+
+}

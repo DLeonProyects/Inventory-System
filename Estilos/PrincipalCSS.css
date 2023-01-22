@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+
+body{
+    background-color: aliceblue;
+}
+
+
+main{
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+
+/*--------------VISIBILIDAD DE LOS FORMULARIOS------------*/
+.caja_login{
+    display: block;
+    opacity: 1;
+}
+
+
+.caja_register{
+    display: none;
+}
+
+
+
+/*----------------------------------------------FORMULARIO REGISTER-------------------------------*/
+
+
+
+/*-------------CAJA PRINCIPAL INVISIBLE-------------*/
+
+.Caja_Principal{
+    max-width: 800px; /*tamano de la caja*/
+    width: 100%;
+    margin: auto;
+    position:relative;
+}
+
+
+
+/*----------------CAJA TRASERA-------------------*/
+
+.caja_trasera{
+    width: 100%;
+    height: 350px;
+    padding: 10px 20px;
+    display: flex;
+    /*backdrop-filter: blur(10px);*/
+    background-color: #034BFF;
+    border-radius: 20px;
+}
+
+.caja_trasera .img_login img{
+    width: 20%;
+    position: absolute;
+    right: 70px;
+    margin-top: 70px;
+    
+
+}
+
+
+
+
+.caja_login{
+    background-color: aliceblue;
+    position: absolute;
+    margin-top: 25px;
+    width: 50%;
+    height: 80%;
+    padding: 25px;
+    left: 50px;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.caja_login:hover{
+    box-shadow: 4px 2px 11px black;
+}
+
+/*--------------FORMULARIO-------------*/
+
+.caja_login .formulario__login h2{
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+}
+
+.formulario__login h2, input, button, p, a{
+    margin-top: 13px;
+}
+
+.formulario__login button{
+    padding: 7px 30px;
+    background:transparent;
+    border: 2px solid black;
+    transition: all 500ms;
+    font-size: 15px;
+    width: 40%;
+    cursor: pointer;
+    
+}
+
+.formulario__login button:hover{
+    background-color: #EA390F;
+    color: #ffFFff;
+}
+
+.formulario__login input{
+    padding: 9px 30px;
+    font-size: 14px;
+    border: none;
+    width: 100%;
+    color: #EA390F;
+    font-weight: bold;
+    /*outline: none;*/
+}
+
+.formulario__login input::placeholder{
+
+    color: #034BFF;
+    font-weight: bold;
+}
+
+
+
+.formulario__login p{
+    font-weight: 600;
+}
+
+.formulario__login a{
+    text-decoration: none;
+    color: #034BFF;
+    transition: all 400ms;
+}
+
+
+.formulario__login a:hover{
+    color: #EA390F;
+}
+
+.caja_register{
+    background-color: aliceblue;
+    position: absolute;
+    margin-top: 10px;
+    width: 60%;
+    height: 88%;
+    padding: 25px;
+    left: 50px;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.caja_register:hover{
+    box-shadow: 4px 2px 11px black;
+}
+
+
+.caja_register .formulario__register h2{
+    font-weight: 600;
+    font-size: 26px;
+    text-align: center;
+}
+
+.formulario__register h2, input, button{
+    margin-top: 5px;
+
+}
+
+.formulario__register button{
+    padding: 7px 30px;
+    background:transparent;
+    border: 2px solid black;
+    transition: all 500ms;
+    font-size: 15px;
+    width: 40%;
+    cursor: pointer;
+    
+}
+
+.formulario__register button:hover{
+    background-color: #EA390F;
+    color: #ffFFff;
+}
+
+
+.formulario__register input{
+    padding: 9px 30px;
+    font-size: 14px;
+    border: none;
+    width: 100%;
+    color: #EA390F;
+    font-weight: bold;
+    /*outline: none;*/
+    /*outline: #000000 solid 2px;*/
+}
+
+.formulario__register input::placeholder{
+
+    color: #034BFF;
+    font-weight: bold;
+    font-size: 1.0em;
+}
+
+
+.formulario__register p{
+    font-weight: 600;
+}
+
+.formulario__register a{
+    text-decoration: none;
+    color: #034BFF;
+    transition: all 400ms;
+}
+
+.formulario__register a:hover{
+    color: #EA390F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.formulario__login{
+    justify-content: center;
+    align-items: center;
+}*/
